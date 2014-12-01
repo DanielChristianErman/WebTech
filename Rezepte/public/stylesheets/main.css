@@ -39,26 +39,14 @@ h2{
     padding-top: 15px;
 }
 
-.col-1-2{
-    width: 49%;
-    float: right;
-    text-align: right;
-    padding-right: 15px;    
-}
+
 
 .col-1-2 a{
     line-height: 40px;
     min-width: 60px;
 }
 
-.wrapper-1 ul{
-    list-style-type: none;
-    background-color: black;
-    width: 120px;
-    text-align: center;
-    float: right;
-    padding-right: 20px;
-}
+
 
 .wrapper-1 li{
     margin-right: 20px;
@@ -69,6 +57,41 @@ h2{
     text-decoration: none;
     padding: 10px 20px 10px 20px;
     background-color: black;
+}
+
+@media only screen and ( min-width: 769px ) {
+    .col-1-2{
+        width: 49%;
+        float: right;
+        text-align: right;
+        padding-right: 15px;    
+    }
+    .wrapper-1 ul{
+    list-style-type: none;
+    background-color: black;
+    width: 120px;
+    text-align: center;
+    float: right;
+    padding-right: 20px;
+}
+}
+
+ 
+@media only screen and ( max-width: 768px ) {
+    .col-1-2{
+        width: 100%;
+        float: left;
+        text-align: right;
+        padding-right: 15px;    
+    }
+    .wrapper-1 ul{
+        list-style-type: none;
+        background-color: black;
+        width: 90%;
+        text-align: center;
+        float: right;
+        padding-right: 20px;
+    }
 }
 
 /*WRAPPER 2-----------------------------*/
@@ -157,39 +180,74 @@ h2{
 
 
 /*WRAPPER 5-----------------------------*/
-.wrapper-5{
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
-.wrapper-5 p {
-    text-align: justify;
-}
 
-.col-5{
-    width: 100%;
-    float: left;
-    height: auto;
-}
+@media only screen and ( min-width: 769px ) {
+    .wrapper-5{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
-.col-5-1{
-    width: 40%;
-    float: left;
-    height: auto;
-}
+    .wrapper-5 p {
+        text-align: justify;
+    }
 
-.col-5-2{
-    width: 40%;
-    float: right;
-    height: auto;
-    text-align: right;
-    padding-right: 15px;    
+    .col-5{
+        width: 100%;
+        float: left;
+        height: auto;
+    }
+
+    .col-5-1{
+        width: 40%;
+        float: left;
+        height: auto;
+    }
+
+    .col-5-2{
+        width: 40%;
+        float: right;
+        height: auto;
+        text-align: right;
+        padding-right: 15px;    
+    }
+ 
+}
+ 
+@media only screen and ( max-width: 768px ) {
+    .wrapper-5{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .wrapper-5 p {
+        text-align: justify;
+    }
+
+    .col-5{
+        width: 100%;
+        float: left;
+        height: auto;
+    }
+
+    .col-5-1{
+        width: 100%;
+        float: auto;
+        height: auto;
+    }
+
+    .col-5-2{
+        margin-top: 50px;
+        width: 100%;
+        float: auto;
+        height: auto;
+           
+    }
 }
 
 /*WRAPPER 6-----------------------------*/
 .wrapper-6{
     height: auto;
-    /*test*/
 }
 
 .wrapper-6 a{
@@ -212,3 +270,7 @@ h2{
     height: auto;
     text-align: center;
 }
+
+
+
+ 
