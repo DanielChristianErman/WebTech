@@ -1,0 +1,24 @@
+@()
+@main("userDatenAendern"){
+			<div id="content">
+				<div id="benutzerDatenAendern">
+					<h1>Eigene Daten Ändern</h1>
+						<div class="aendern">
+							<form action="changePass"  method="Get"> 
+								<h1>Hier können Sie Ihr Passwort ändern</h1>
+								<input name="passwortAlt" type="password" placeholder="Altes Passwort eingeben"></input></br>
+								<input name="passwortNeu" type="password" placeholder="Neue Passwort eingeben"></input></br>
+								<input name="passwortAendern" type="submit" value="Ändern"></input>
+							</form>
+							
+							<form action="changeEmail" methode="Get">
+								<h1>Hier können Sie Ihre Email ändern</h1>
+								<input name="emailAlt" type="text" placeholder="Alte Email eingeben"></input></br>
+								<input name="emailNeu" type="text" placeholder="Neue Email eingeben"></input></br>
+								<input name="emailAendern" type="submit" value="Ändern"></input>
+							</form>
+						</div>
+				</div>
+			</div>
+
+}

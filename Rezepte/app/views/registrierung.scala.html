@@ -1,0 +1,49 @@
+@(fehler:Boolean)
+@main("Registrierung"){
+	<script src=@routes.Assets.at("javascripts/registration.js")></script>
+			<div id="content">
+				<div id="registration">
+					<div id="mate">
+						<form id="reg1" onsubmit="return checkReg();" onreset="resetAll()" action="addUser" method="Get">
+							<fieldset class="reg2">
+								<legend>Geben Sie Ihre Daten ein:</legend>
+								<div id="pic_div">
+									<img id="picUpl" src=@routes.Assets.at("images/AddUser.png") name"Plus">
+								</div>
+								<ol> 
+									<li>
+										<label for="vorname">Vorname</label>
+										<input id="vorname" name="vorname" maxlength="30" type="text">
+									</li>
+									<li>
+										<label for="nachname">Nachname</label>
+										<input id="nachname" name="nachname" maxlength="30" type="text">
+									</li>
+									<li>
+										<label for="email">E-mail-Adresse</label>
+										<input id="email" name="email" maxlength="30" type="text">
+									</li>
+									<li>
+										<label for="email2">E-mail-Adresse wiederholen</label>
+										<input id="email2" name="email2" maxlength="30" type="text"> </br>
+									</li>
+									<li>
+										<label for="passwort">Passwort</label>
+										<input id="passwort" name="passwort" maxlength="30" type="password">
+									</li>
+									<li>
+										<label for="passwort2">Passwort wiederholen</label>
+										<input id="passwort2" name="passwort2" maxlength="30" type="password">
+									</li>
+								</ol>
+							</fieldset>
+							<fieldset id="button_fs">
+								<input type="reset" value="reset" id="resetButton">
+								<input type="submit" value="weiter" id="sendenbutton"/>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+
+}
